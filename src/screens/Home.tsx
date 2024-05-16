@@ -101,11 +101,11 @@ const Home = () => {
 
         <View style={styles.singleOptionContainer}>
           <View style={styles.optionContainer3}>
-            <Entypo
+            <AntDesign
+              name='appstore-o'
               style={{
                 padding: 12,
               }}
-              name='menu'
               size={26}
               color='white'
             />

@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { AntDesign } from "@expo/vector-icons";
+import { AntDesign, Feather } from "@expo/vector-icons";
 
 const HomeTransaction = () => {
   return (
     <View>
+      {/*  */}
       <View
         style={{
           display: "flex",
@@ -43,78 +44,242 @@ const HomeTransaction = () => {
       <View
         style={{
           display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-          paddingHorizontal: 10,
+          rowGap: 15,
         }}
       >
+        {/* health */}
         <View
           style={{
             display: "flex",
             flexDirection: "row",
+            justifyContent: "space-between",
             alignItems: "center",
-            justifyContent: "flex-start",
-            columnGap: 24,
+            paddingHorizontal: 10,
           }}
         >
           <View
             style={{
-              backgroundColor: "#222831",
               display: "flex",
-              width: 60,
+              flexDirection: "row",
               alignItems: "center",
-              justifyContent: "center",
-              borderRadius: 15,
+              justifyContent: "flex-start",
+              columnGap: 24,
             }}
           >
-            <AntDesign
-              style={{
-                paddingTop: 20,
-                paddingBottom: 20,
-                paddingLeft: 6,
-                paddingRight: 6,
-              }}
-              name='medicinebox'
-              size={28}
-              color='white'
-            />
-          </View>
-          <View style={{}}>
             <View
               style={{
+                backgroundColor: "#222831",
                 display: "flex",
-                flexDirection: "row",
+                width: 60,
                 alignItems: "center",
-                justifyContent: "flex-start",
-                columnGap: 15,
+                justifyContent: "center",
+                borderRadius: 15,
               }}
             >
-              <Text
+              <AntDesign
                 style={{
-                  fontSize: 24,
-                  color: "white",
-                  fontWeight: 700,
+                  paddingTop: 20,
+                  paddingBottom: 20,
+                  paddingLeft: 6,
+                  paddingRight: 6,
+                }}
+                name='medicinebox'
+                size={28}
+                color='white'
+              />
+            </View>
+            <View style={{}}>
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  columnGap: 15,
                 }}
               >
-                Health
+                <Text
+                  style={{
+                    fontSize: 24,
+                    color: "white",
+                    fontWeight: 700,
+                  }}
+                >
+                  Health
+                </Text>
+                <AntDesign name='arrowdown' size={24} color='red' />
+              </View>
+              <Text
+                style={{
+                  color: "grey",
+                  fontSize: 20,
+                }}
+              >
+                1 Transaction
               </Text>
-              <AntDesign name='arrowdown' size={24} color='red' />
             </View>
-            <Text
-              style={{
-                color: "grey",
-                fontSize: 20,
-              }}
-            >
-              1 Transaction
+          </View>
+          <View>
+            <Text style={{ color: "grey", fontSize: 24, fontWeight: 600 }}>
+              -$46.00
             </Text>
           </View>
         </View>
-        <View>
-          <Text style={{ color: "grey", fontSize: 24, fontWeight: 600 }}>
-            -$46.00
-          </Text>
+        {/* groceries */}
+        <View
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            paddingHorizontal: 10,
+          }}
+        >
+          <View
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "flex-start",
+              columnGap: 24,
+            }}
+          >
+            <View
+              style={{
+                backgroundColor: "#222831",
+                display: "flex",
+                width: 60,
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 15,
+              }}
+            >
+              <Feather
+                name='shopping-bag'
+                style={{
+                  paddingTop: 20,
+                  paddingBottom: 20,
+                  paddingLeft: 6,
+                  paddingRight: 6,
+                }}
+                size={28}
+                color='white'
+              />
+            </View>
+            <View style={{}}>
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  columnGap: 15,
+                }}
+              >
+                <Text
+                  style={{
+                    fontSize: 24,
+                    color: "white",
+                    fontWeight: 700,
+                  }}
+                >
+                  Groceries
+                </Text>
+                <AntDesign name='arrowdown' size={24} color='red' />
+              </View>
+              <Text
+                style={{
+                  color: "grey",
+                  fontSize: 20,
+                }}
+              >
+                6 Transaction
+              </Text>
+            </View>
+          </View>
+          <View>
+            <Text style={{ color: "grey", fontSize: 24, fontWeight: 600 }}>
+              -$126.00
+            </Text>
+          </View>
+        </View>
+        {/* groceries */}
+        <View
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            paddingHorizontal: 10,
+          }}
+        >
+          <View
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "flex-start",
+              columnGap: 24,
+            }}
+          >
+            <View
+              style={{
+                backgroundColor: "#222831",
+                display: "flex",
+                width: 60,
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 15,
+              }}
+            >
+              <Feather
+                name='camera'
+                style={{
+                  paddingTop: 20,
+                  paddingBottom: 20,
+                  paddingLeft: 6,
+                  paddingRight: 6,
+                }}
+                size={28}
+                color='white'
+              />
+            </View>
+            <View style={{}}>
+              <View
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  columnGap: 15,
+                }}
+              >
+                <Text
+                  style={{
+                    fontSize: 24,
+                    color: "white",
+                    fontWeight: 700,
+                  }}
+                >
+                  Freelance
+                </Text>
+                <AntDesign name='arrowup' size={24} color='gray' />
+              </View>
+              <Text
+                style={{
+                  color: "grey",
+                  fontSize: 20,
+                }}
+              >
+                12 Transaction
+              </Text>
+            </View>
+          </View>
+          <View>
+            <Text style={{ color: "grey", fontSize: 24, fontWeight: 600 }}>
+              +$900.00
+            </Text>
+          </View>
         </View>
       </View>
     </View>
